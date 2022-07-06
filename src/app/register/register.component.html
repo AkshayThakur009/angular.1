@@ -1,0 +1,22 @@
+
+
+
+<mat-card>
+  <h1>Registration Form</h1>
+   <mat-form-field>Name</mat-form-field>
+<input type="text" placeholder="Enter Your Name"[(ngModel)]="users.Name"/> <br>
+<mat-form-field>Email</mat-form-field>
+<input type="text" placeholder="Enter Your Email"[(ngModel)]="users.Email"/> <br>
+<mat-form-field>Address</mat-form-field>
+<input type="text" placeholder="Enter Your Address"[(ngModel)]="users.Address"/> <br>
+<mat-form-field>Contact</mat-form-field>
+<input type="text" placeholder="Enter Your Contact"[(ngModel)]="users.Contact"/> <br>
+<mat-form-field>Whatsapp contact</mat-form-field>
+<input type="text" placeholder="Enter Your Whatsapp contact"[(ngModel)]="users.WhatsappContact"/> <br>
+<mat-form-field>Password</mat-form-field>
+<input type="password" placeholder="Enter Your Password"[(ngModel)]="users.Password"/> <br>
+<mat-form-field>Confirm password</mat-form-field>
+<input type="password" placeholder="Enter Your Confirm Password"[(ngModel)]="users.ConfirmPassword"/> <br>
+<button mat-raised-button (click)="oneclick()">Submit</button>
+</mat-card>
+

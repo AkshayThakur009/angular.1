@@ -1,0 +1,169 @@
+[debug] [2022-07-06T10:06:03.973Z] ----------------------------------------------------------------------
+[debug] [2022-07-06T10:06:03.977Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\dell1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-06T10:06:03.977Z] CLI Version:   11.2.0
+[debug] [2022-07-06T10:06:03.978Z] Platform:      win32
+[debug] [2022-07-06T10:06:03.978Z] Node Version:  v16.13.2
+[debug] [2022-07-06T10:06:03.979Z] Time:          Wed Jul 06 2022 15:36:03 GMT+0530 (India Standard Time)
+[debug] [2022-07-06T10:06:03.980Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-06T10:06:03.992Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-06T10:06:03.993Z] > authorizing via signed-in user (akshaythakur150208@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\dell1\angular.1
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-06T10:07:13.621Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-07-06T10:07:14.887Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-07-06T10:07:14.888Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project southern-zephyr-276912 (My First Project) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-07-06T10:07:31.444Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-07-06T10:07:33.786Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/firebasedatabase.googleapis.com 200
+[debug] [2022-07-06T10:07:33.787Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2022-07-06T10:07:33.793Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2022-07-06T10:07:35.941Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2022-07-06T10:07:35.942Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2022-07-06T10:07:45.946Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-07-06T10:07:48.107Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/firebasedatabase.googleapis.com 200
+[debug] [2022-07-06T10:07:48.108Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-07-06T10:07:48.126Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/southern-zephyr-276912 [none]
+[debug] [2022-07-06T10:07:48.737Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/southern-zephyr-276912 200
+[debug] [2022-07-06T10:07:48.738Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/southern-zephyr-276912 {"projectId":"southern-zephyr-276912","projectNumber":"572298932362","displayName":"My First Project","name":"projects/southern-zephyr-276912","resources":{"hostingSite":"southern-zephyr-276912","storageBucket":"southern-zephyr-276912.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] +  Default rules have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2022-07-06T10:08:17.973Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/firestore.googleapis.com [none]
+[debug] [2022-07-06T10:08:20.348Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/firestore.googleapis.com 200
+[debug] [2022-07-06T10:08:20.349Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/firestore.googleapis.com [omitted]
+[debug] [2022-07-06T10:08:20.351Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/southern-zephyr-276912 [none]
+[debug] [2022-07-06T10:08:21.464Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/southern-zephyr-276912 200
+[debug] [2022-07-06T10:08:21.464Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/southern-zephyr-276912 {"name":"apps/southern-zephyr-276912","id":"southern-zephyr-276912","authDomain":"gmail.com","locationId":"us-central","codeBucket":"staging.southern-zephyr-276912.appspot.com","servingStatus":"SERVING","defaultHostname":"southern-zephyr-276912.uc.r.appspot.com","defaultBucket":"southern-zephyr-276912.appspot.com","serviceAccount":"southern-zephyr-276912@appspot.gserviceaccount.com","gcrDomain":"us.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2022-07-06T10:08:21.465Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-07-06T10:08:21.466Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-06T10:08:21.467Z] > authorizing via signed-in user (akshaythakur150208@gmail.com)
+[debug] [2022-07-06T10:08:21.468Z] [iam] checking project southern-zephyr-276912 for permissions ["firebase.projects.get"]
+[debug] [2022-07-06T10:08:21.470Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/southern-zephyr-276912:testIamPermissions [none]
+[debug] [2022-07-06T10:08:21.470Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/southern-zephyr-276912:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-07-06T10:08:23.282Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/southern-zephyr-276912:testIamPermissions 200
+[debug] [2022-07-06T10:08:23.283Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/southern-zephyr-276912:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-07-06T10:08:23.316Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/southern-zephyr-276912/releases pageSize=10&pageToken=
+[debug] [2022-07-06T10:08:24.170Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/southern-zephyr-276912/releases 200
+[debug] [2022-07-06T10:08:24.171Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/southern-zephyr-276912/releases {"releases":[{"name":"projects/southern-zephyr-276912/releases/cloud.firestore","rulesetName":"projects/southern-zephyr-276912/rulesets/9fff3d2a-8a6a-4b15-8efd-ccf4c8a0b5a4","createTime":"2022-07-06T06:28:41.049672Z","updateTime":"2022-07-06T06:28:41.049672Z"}]}
+[debug] [2022-07-06T10:08:24.172Z] Found ruleset: projects/southern-zephyr-276912/rulesets/9fff3d2a-8a6a-4b15-8efd-ccf4c8a0b5a4
+[debug] [2022-07-06T10:08:24.173Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/southern-zephyr-276912/rulesets/9fff3d2a-8a6a-4b15-8efd-ccf4c8a0b5a4 [none]
+[debug] [2022-07-06T10:08:25.792Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/southern-zephyr-276912/rulesets/9fff3d2a-8a6a-4b15-8efd-ccf4c8a0b5a4 200
+[debug] [2022-07-06T10:08:25.793Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/southern-zephyr-276912/rulesets/9fff3d2a-8a6a-4b15-8efd-ccf4c8a0b5a4 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-07-06T10:08:25.849Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/southern-zephyr-276912/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2022-07-06T10:08:25.856Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/southern-zephyr-276912/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false [none]
+[debug] [2022-07-06T10:08:27.418Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/southern-zephyr-276912/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2022-07-06T10:08:27.419Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/southern-zephyr-276912/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2022-07-06T10:08:27.501Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/southern-zephyr-276912/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false 200
+[debug] [2022-07-06T10:08:27.502Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/southern-zephyr-276912/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false {"fields":[{"name":"projects/southern-zephyr-276912/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2022-07-06T10:08:27.542Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-06T10:08:27.543Z] > authorizing via signed-in user (akshaythakur150208@gmail.com)
+[debug] [2022-07-06T10:08:27.544Z] [iam] checking project southern-zephyr-276912 for permissions ["firebase.projects.get"]
+[debug] [2022-07-06T10:08:27.545Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/southern-zephyr-276912:testIamPermissions [none]
+[debug] [2022-07-06T10:08:27.545Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/southern-zephyr-276912:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-07-06T10:08:29.260Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/southern-zephyr-276912:testIamPermissions 200
+[debug] [2022-07-06T10:08:29.260Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/southern-zephyr-276912:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-07-06T10:08:29.262Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-07-06T10:08:29.269Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-07-06T10:08:31.547Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/cloudfunctions.googleapis.com 200
+[debug] [2022-07-06T10:08:31.548Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2022-07-06T10:08:31.549Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2022-07-06T10:08:31.562Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/runtimeconfig.googleapis.com 200
+[debug] [2022-07-06T10:08:31.562Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2022-07-06T10:08:33.860Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2022-07-06T10:08:33.861Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2022-07-06T10:08:43.862Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-07-06T10:08:46.011Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/cloudfunctions.googleapis.com 200
+[debug] [2022-07-06T10:08:46.012Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/southern-zephyr-276912/services/cloudfunctions.googleapis.com [omitted]
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-07-06T10:21:15.188Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-07-06T10:21:15.593Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-07-06T10:21:15.594Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.8.4","browserURL":"https://www.gstatic.com/firebasejs/9.8.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.8.4/firebase.tgz"},"live":{"version":"9.8","browserURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.8.4/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.8.4/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.8.4/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.8.4/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.8.4/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.8.4/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.8.4/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.8.4/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.8.4/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.8.4/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\dell1\angular.1 is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=189650450&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-07-06T10:22:33.651Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-07-06T10:22:33.651Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-07-06T10:22:34.703Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-07-06T10:22:34.703Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-07-06T10:22:34.753Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-07-06T10:22:35.564Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-07-06T10:22:35.565Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"AkshayThakur009","id":105772813,"node_id":"U_kgDOBk33DQ","avatar_url":"https://avatars.githubusercontent.com/u/105772813?v=4","gravatar_id":"","url":"https://api.github.com/users/AkshayThakur009","html_url":"https://github.com/AkshayThakur009","followers_url":"https://api.github.com/users/AkshayThakur009/followers","following_url":"https://api.github.com/users/AkshayThakur009/following{/other_user}","gists_url":"https://api.github.com/users/AkshayThakur009/gists{/gist_id}","starred_url":"https://api.github.com/users/AkshayThakur009/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/AkshayThakur009/subscriptions","organizations_url":"https://api.github.com/users/AkshayThakur009/orgs","repos_url":"https://api.github.com/users/AkshayThakur009/repos","events_url":"https://api.github.com/users/AkshayThakur009/events{/privacy}","received_events_url":"https://api.github.com/users/AkshayThakur009/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2022-05-18T06:27:53Z","updated_at":"2022-06-04T07:08:29Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as AkshayThakur009 
+[info] 
+[debug] [2022-07-06T10:23:07.535Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-07-06T10:23:08.853Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-07-06T10:23:08.853Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-06T10:39:49.924Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2022-07-06T10:39:57.314Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2022-07-06T10:39:57.314Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-06T11:04:19.967Z] Error: kill ENOSYS
+    at process.kill (node:internal/process/per_thread:215:13)
+    at process.listener (C:\Users\dell1\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (node:events:390:28)
+[error] 
+[error] Error: An unexpected error has occurred.
